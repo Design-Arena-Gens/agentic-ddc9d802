@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Forex Scanner CLI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #0f172a;
+        color: #e2e8f0;
+      }
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 1rem;
+      }
+      pre {
+        background: rgba(15, 23, 42, 0.7);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        overflow-x: auto;
+      }
+      code {
+        font-family: "Fira Code", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+      }
+      a {
+        color: #38bdf8;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Forex Scanner CLI</h1>
+    <p>
+      This repository contains a Python command-line tool that fetches live Forex exchange rates
+      from the <a href="https://www.alphavantage.co/" target="_blank" rel="noreferrer">Alpha Vantage</a> API.
+    </p>
+    <h2>Quick Start</h2>
+    <pre><code>python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+export ALPHAVANTAGE_API_KEY=your_key
+python forex_scanner.py --pairs EUR/USD USD/JPY</code></pre>
+    <p>
+      Customize the pairs via the <code>--pairs</code> flag or configure continuous updates with
+      <code>--refresh</code>.
+    </p>
+    <p>
+      See the README for full details. Built with ❤️ by an AI coding agent.
+    </p>
+  </body>
+</html>
